@@ -1,11 +1,20 @@
--------------------------------<<<Model-View-Controller (MVC) Challenge: Tech Blog>>>-------------------------------
+-------------------------------<<<Model-View-Controller (MVC) Challenge: Tech Blog>>>--------------------------------
 ---------------------------------------------------------------------------------------------------------------------    
-    Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
+    
+    Writing about tech can be just as important as making it. Developers spend plenty of time creating new 
+    applications and debugging existing codebases, but most developers also spend at least some of their time 
+    reading and writing about technical concepts, recent advancements, and new technologies. A simple Google 
+    search for any concept covered in this course returns thousands of think pieces and tutorials from developers 
+    of all skill levels!
 
 ---------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------<<<CHALLENGE>>>--------------------------------------------------
  
-    Your challenge this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+    Your challenge this week is to build a CMS-style blog site similar to a Wordpress site, where developers can 
+    publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from 
+    scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using 
+    Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for 
+    authentication.
 
 ---------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------<<<USER STORY>>>--------------------------------------------------
@@ -20,7 +29,8 @@
 <<<GIVEN a CMS-style blog site:
 
 1. WHEN I visit the site for the first time
-     THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
+     THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation 
+     links for the homepage and the dashboard; and the option to log in
 
 2. WHEN I click on the homepage option
      THEN I am taken to the homepage
@@ -41,22 +51,27 @@
      THEN I see navigation links for the homepage, the dashboard, and the option to log out
 
 8. WHEN I click on the homepage option in the navigation
-     THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
+     THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date 
+     created
 
 9. WHEN I click on an existing blog post
-     THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
+     THEN I am presented with the post title, contents, post creator’s username, and date created for that post and 
+     have the option to leave a comment
 
 10. WHEN I enter a comment and click on the submit button while signed in
-     THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
+     THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and 
+     the date created
 
 11. WHEN I click on the dashboard option in the navigation
-     THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
+     THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add 
+     a new blog post
 
 12. WHEN I click on the button to add a new blog post
      THEN I am prompted to enter both a title and contents for my blog post
 
 13. WHEN I click on the button to create a new blog post
-     THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
+     THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new 
+     blog post
 
 14. WHEN I click on one of my existing posts in the dashboard
      THEN I am able to delete or update my post and taken back to an updated dashboard
@@ -65,27 +80,34 @@
      THEN I am signed out of the site
 
 16. WHEN I am idle on the site for more than a set time
-     THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
-Mock-Up
+     THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete 
+     comments
 
-<The following animation demonstrates the application functionality:
-    --> Animation cycles through signing into the app, clicking on buttons, and updating blog posts.
 ---------------------------------------------------------------------------------------------------------------------
 -----------------------------------<<<<<<<<<<<<<<<<GETTING STARTED>>>>>>>>>>>>>>>------------------------------------
 ---------------------------------------------------------------------------------------------------------------------
 
-1. Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the express-handlebars (Links to an external site.) package to use Handlebars.js for your Views, use the MySQL2 (Links to an external site.) and Sequelize (Links to an external site.) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+1. Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the 
+express-handlebars (Links to an external site.) package to use Handlebars.js for your Views, use the MySQL2 (Links 
+to an external site.) and Sequelize (Links to an external site.) packages to connect to a MySQL database for your 
+Models, and create an Express.js API for your Controllers.
 
-2. You’ll also need the dotenv package (Links to an external site.) to use environment variables, the bcrypt package (Links to an external site.) to hash passwords, and the express-session (Links to an external site.) and connect-session-sequelize (Links to an external site.) packages to add authentication.
+2. You’ll also need the dotenv package (Links to an external site.) to use environment variables, the bcrypt package 
+(Links to an external site.) to hash passwords, and the express-session (Links to an external site.) and 
+connect-session-sequelize (Links to an external site.) packages to add authentication.
 
 <NOTE
-The express-session (Links to an external site.) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+The express-session (Links to an external site.) package stores the session data on the client in a cookie. When you 
+are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to 
+start a new session. This is the default behavior and you do not have to do anything to your application other than 
+implement the npm package.
 
 ---------------------------------------------------------------------------------------------------------------------
 ------------------------------------<<<<<<<<<<<<<<<<GRADING REQS>>>>>>>>>>>>>>>--------------------------------------
 ---------------------------------------------------------------------------------------------------------------------
 <NOTE
-1. If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
+1. If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your
+ graduation requirements. Examples of incomplete submissions include the following:
 
 1. A repository that has no code
 2. A repository that includes a unique name but nothing else
@@ -131,5 +153,10 @@ The express-session (Links to an external site.) package stores the session data
 3. The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
 <ADDITIONAL NOTES:
-1. You are allowed to miss up to two Challenge assignments and still earn your certificate. If you complete all Challenge assignments, your lowest two grades will be dropped. If you wish to skip this assignment, click Next, and move on to the next Module.
-2. Comments are disabled for graded submissions in BootCamp Spot. If you have questions about your feedback, please notify your instructional staff or the Student Success Manager. If you would like to resubmit your work for an improved grade, you can use the Resubmit Assignment button to upload new links. You may resubmit up to three times for a total of four submissions.>
+1. You are allowed to miss up to two Challenge assignments and still earn your certificate. If you complete all 
+Challenge assignments, your lowest two grades will be dropped. If you wish to skip this assignment, click Next, and 
+move on to the next Module.
+2. Comments are disabled for graded submissions in BootCamp Spot. If you have questions about your feedback, please 
+notify your instructional staff or the Student Success Manager. If you would like to resubmit your work for an improved 
+grade, you can use the Resubmit Assignment button to upload new links. You may resubmit up to three times for a total 
+of four submissions.>
